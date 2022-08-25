@@ -34,6 +34,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentsLabel" destination="RVs-1Q-Ssq" id="2XF-Pi-ovq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +45,7 @@
         <!--설정-->
         <scene sceneID="Ybb-6J-klL">
             <objects>
-                <viewController id="5Gt-ih-4wN" sceneMemberID="viewController">
+                <viewController id="5Gt-ih-4wN" customClass="SettingViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgm-T4-TUQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +88,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
                                                     <color key="baseForegroundColor" systemColor="systemYellowColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="textColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="1CM-NW-9ct"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-Hs-c3M">
                                                 <rect key="frame" x="85" y="0.0" width="45" height="31"/>
@@ -92,6 +98,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
                                                     <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="textColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="ACo-cO-4vM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-0Y-yHK">
                                                 <rect key="frame" x="170" y="0.0" width="45" height="31"/>
@@ -99,6 +108,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
                                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="textColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="RLE-ro-sgC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,6 +134,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backgroudColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="13k-bH-wcM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-1l-H9a">
                                                 <rect key="frame" x="85" y="0.0" width="45" height="31"/>
@@ -129,6 +144,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
                                                     <color key="baseForegroundColor" systemColor="systemMintColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backgroudColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="2yM-Mn-Sb9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSQ-BY-2S4">
                                                 <rect key="frame" x="170" y="0.0" width="45" height="31"/>
@@ -136,6 +154,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
                                                     <color key="baseForegroundColor" systemColor="systemBlueColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backgroudColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="x8Z-0p-Nen"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -145,6 +166,9 @@
                                 <rect key="frame" x="183" y="414.5" width="48.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="9QW-aB-uOg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jek-wl-Xfj"/>
@@ -164,6 +188,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="snb-hW-aF5"/>
+                    <connections>
+                        <outlet property="blackButton" destination="dUT-Aj-3xT" id="FfT-A0-cb3"/>
+                        <outlet property="blueButton" destination="KSQ-BY-2S4" id="ls0-VL-aG3"/>
+                        <outlet property="greenButton" destination="zMZ-0Y-yHK" id="ZQ7-1m-S5N"/>
+                        <outlet property="mintButton" destination="D4L-1l-H9a" id="a38-SN-KZR"/>
+                        <outlet property="purpleButton" destination="GNQ-Hs-c3M" id="N3Y-Bg-RkU"/>
+                        <outlet property="textField" destination="yp3-CD-8W0" id="eyS-FU-FcP"/>
+                        <outlet property="yellowButton" destination="rMA-R7-5h2" id="YRk-LW-cEz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5Z-2j-V8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
