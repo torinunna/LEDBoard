@@ -138,11 +138,11 @@
                                                     <action selector="backgroudColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="13k-bH-wcM"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-1l-H9a">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-1l-H9a" userLabel="Orange Button">
                                                 <rect key="frame" x="85" y="0.0" width="45" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
-                                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
+                                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="backgroudColorPressed:" destination="5Gt-ih-4wN" eventType="touchUpInside" id="2yM-Mn-Sb9"/>
@@ -192,7 +192,7 @@
                         <outlet property="blackButton" destination="dUT-Aj-3xT" id="FfT-A0-cb3"/>
                         <outlet property="blueButton" destination="KSQ-BY-2S4" id="ls0-VL-aG3"/>
                         <outlet property="greenButton" destination="zMZ-0Y-yHK" id="ZQ7-1m-S5N"/>
-                        <outlet property="mintButton" destination="D4L-1l-H9a" id="a38-SN-KZR"/>
+                        <outlet property="orangeButton" destination="D4L-1l-H9a" id="DjD-qu-UNw"/>
                         <outlet property="purpleButton" destination="GNQ-Hs-c3M" id="N3Y-Bg-RkU"/>
                         <outlet property="textField" destination="yp3-CD-8W0" id="eyS-FU-FcP"/>
                         <outlet property="yellowButton" destination="rMA-R7-5h2" id="YRk-LW-cEz"/>
@@ -232,8 +232,8 @@
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
